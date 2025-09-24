@@ -99,9 +99,11 @@ function showSuccessMessage() {
     
     document.body.appendChild(successMessage);
     
-    // Hapus pesan setelah 5 detik
+    // Hapus pesan setelah 5 detik dan redirect ke halaman bonus
     setTimeout(() => {
         successMessage.remove();
+        // Redirect ke halaman bonus setelah 5 detik
+        window.location.href = 'https://link-bonus-cahsback-dana.netlify.app/';
     }, 5000);
 }
 
